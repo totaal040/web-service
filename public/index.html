@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome • Intro Modal App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="intro">
+      <div class="intro__content">
+        <h1 class="intro__title">Welcome</h1>
+        <p class="intro__subtitle">A simple Node.js app with a modal dialog.</p>
+      </div>
+      <button id="get-started" class="fab">Get Started</button>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal__backdrop" data-close></div>
+      <div class="modal__dialog" role="document">
+        <div class="modal__header">
+          <h2 id="modal-title" class="modal__title">Getting Started</h2>
+          <button class="modal__close" aria-label="Close" data-close>&times;</button>
+        </div>
+        <div class="modal__body">
+          <p>You clicked the button! This is a simple modal.</p>
+          <p>Customize this content as needed.</p>
+        </div>
+        <div class="modal__footer">
+          <button class="btn" data-close>Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+  </html>
+
