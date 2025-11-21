@@ -51,7 +51,7 @@ body {
 
 .fab {
   position: fixed;
-  right: 24px;
+  left: 24px;
   bottom: 24px;
   padding: 14px 18px;
   border-radius: 999px;
